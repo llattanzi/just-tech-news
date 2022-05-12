@@ -42,7 +42,8 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        //   send user to dashboard if logged in okay
+        document.location.replace('/dashboard')
       } else {
         alert(response.statusText);
       }
